@@ -1,0 +1,101 @@
+.right-side-bar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: #2a3c49;
+    margin: 20px 5px;
+    color: white;
+
+    .header {
+        >svg {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            scale: 1.5;
+
+            cursor: pointer;
+
+        }
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content;
+        padding: 10px 0;
+
+        .category {
+            padding: 10px 5px;
+            position: relative;
+            border-top: 1px solid rgb(133, 133, 133);
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+
+            &:first-child {
+                border-top: 0;
+            }
+
+            .tag {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin: 5px 0;
+
+                .tagname {
+                    font-size: x-small;
+                    color: white;
+
+                    p {
+                        font-weight: lighter;
+                        padding: 5px 10px;
+                        color: gainsboro;
+                    }
+                }
+
+                .opt {
+                    position: relative;
+                    width: 60%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: end;
+                    font-size: large;
+
+                    svg {
+                        scale: 1.5;
+                        color: rgb(175, 175, 175);
+                        cursor: pointer;
+
+                        &:hover {
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        padding-left: 20px;
+
+        a {
+            color: rgb(17, 112, 255);
+        }
+    }
+}
