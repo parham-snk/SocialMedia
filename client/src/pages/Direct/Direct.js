@@ -15,7 +15,7 @@ import CientMsg from './msgs/client'
 import USerMsg from './msgs/user'
 import { io } from "socket.io-client";
 
-let socket = io('http://192.168.1.101:8081')
+let socket = io('http://localhost:8081')
 
 socket.on('recieveMsg', msg => {
     console.log(msg)
